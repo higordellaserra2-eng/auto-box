@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_retry">Tentar novamente</string>
+    <string name="offline_banner_message">Sem conexão com a internet. Alguns dados podem estar desatualizados.</string>
+    <string name="cd_offline_icon">Sem conexão</string>
+    <string name="cd_error_icon">Aviso de erro</string>
+    <string name="cd_empty_icon">Nenhum item encontrado</string>
+    <string name="cd_loading">Carregando conteúdo</string>
+    <string name="cd_clear_input">Limpar campo</string>
+    <string name="cd_navigate_back">Voltar</string>
+    <string name="snackbar_dismiss">Fechar</string>
+    <string name="status_loading_button">Processando</string>
+</resources>

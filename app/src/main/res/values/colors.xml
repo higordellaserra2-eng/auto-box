@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="autobox_primary">#1453B8</color>
+    <color name="autobox_launcher_bg">#1050A8</color>
+    <color name="autobox_secondary">#D95D14</color>
+    <color name="autobox_surface_light">#F7F9FC</color>
+    <color name="autobox_surface_dark">#0F141D</color>
+</resources>

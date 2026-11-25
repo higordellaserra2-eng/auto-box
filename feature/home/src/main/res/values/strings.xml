@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_greeting">Olá, %1$s</string>
+    <string name="home_subtitle">Tudo pronto para cuidar do seu carro hoje.</string>
+    <string name="home_points_section_title">Seus benefícios</string>
+    <string name="home_points_next_reward">Próxima recompensa: %1$s</string>
+    <string name="home_points_remaining">Faltam %1$s pontos para resgatar</string>
+    <string name="home_cashback_label">Cashback disponível: %1$s</string>
+    <string name="home_points_progress_cd">Progresso de pontos: %1$d de %2$d pontos para %3$s</string>
+    <string name="home_quick_actions_title">Atalhos rápidos</string>
+    <string name="home_action_pay">Pagar</string>
+    <string name="home_action_pay_pending">Pagar (%1$s)</string>
+    <string name="home_action_register_vehicle">Cadastrar veículo</string>
+    <string name="home_next_reminder_title">Próximo lembrete</string>
+    <string name="home_reminder_due_date">Previsto para %1$s</string>
+    <string name="home_reminder_status_due_soon">Em breve</string>
+    <string name="home_reminder_status_upcoming">Agendado</string>
+    <string name="home_reminder_status_info">Lembrete</string>
+    <string name="home_primary_vehicle_label">Veículo principal</string>
+    <string name="home_empty_title">Comece cadastrando seu veículo</string>
+    <string name="home_empty_description">Adicione seu carro para acompanhar serviços, acumular pontos e pagar com rapidez.</string>
+    <string name="home_error_title">Não foi possível carregar o início</string>
+
+    <plurals name="home_points_balance">
+        <item quantity="one">%1$s ponto</item>
+        <item quantity="other">%1$s pontos</item>
+    </plurals>
+</resources>

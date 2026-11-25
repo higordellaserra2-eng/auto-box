@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_offline">Você está sem conexão no momento. Verifique sua internet e tente novamente.</string>
+    <string name="error_timeout">A resposta demorou mais que o esperado. Tente novamente em instantes.</string>
+    <string name="error_unauthorized">Sua sessão expirou. Entre novamente para continuar.</string>
+    <string name="error_server_unavailable">Não foi possível concluir agora. Nossos serviços estão temporariamente indisponíveis.</string>
+    <string name="error_validation">Confira os dados informados e tente novamente.</string>
+    <string name="error_unknown">Algo não saiu como esperado. Tente novamente.</string>
+</resources>

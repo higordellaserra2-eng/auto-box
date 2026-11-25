@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_skip">Pular</string>
+    <string name="onboarding_next">Continuar</string>
+    <string name="onboarding_start">Começar agora</string>
+    <string name="onboarding_page_indicator_cd">Etapa %1$d de %2$d</string>
+
+    <string name="onboarding_title_1">Cuidado completo para o seu carro</string>
+    <string name="onboarding_desc_1">Acompanhe revisões, trocas de óleo e serviços realizados em um só lugar, sem papelada.</string>
+
+    <string name="onboarding_title_2">Pague com Pix ou cartão sem fila</string>
+    <string name="onboarding_desc_2">Confira os itens do atendimento e pague direto pelo celular com comprovante na hora.</string>
+
+    <string name="onboarding_title_3">Acumule pontos e descontos</string>
+    <string name="onboarding_desc_3">Cada serviço gera pontos e cashback para trocar por lavagens, revisões e benefícios exclusivos.</string>
+</resources>

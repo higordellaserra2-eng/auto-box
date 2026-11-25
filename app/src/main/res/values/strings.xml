@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">AutoBox</string>
+
+    <!-- Navegação principal -->
+    <string name="nav_home">Início</string>
+    <string name="nav_history">Histórico</string>
+    <string name="nav_rewards">Benefícios</string>
+    <string name="nav_vehicles">Veículos</string>
+    <string name="nav_profile">Perfil</string>
+
+    <!-- Pontos de extensão das próximas etapas -->
+    <string name="stub_action_back_home">Voltar para o início</string>
+
+    <string name="stub_payment_title">Pagamento</string>
+    <string name="stub_payment_desc">Aqui você poderá conferir o resumo do serviço e pagar com Pix copia e cola ou cartão em um ambiente seguro.</string>
+
+    <string name="stub_history_title">Histórico de serviços</string>
+    <string name="stub_history_desc">Seus atendimentos anteriores, comprovantes e filtros por veículo aparecerão aqui.</string>
+
+    <string name="stub_rewards_title">Benefícios e pontos</string>
+    <string name="stub_rewards_desc">Em breve você acompanhará seu extrato de pontos, cashback e resgate de recompensas.</string>
+
+    <string name="stub_vehicles_title">Meus veículos</string>
+    <string name="stub_vehicles_desc">Cadastre suas placas (antiga ou Mercosul) para agilizar pagamentos e receber lembretes de revisão.</string>
+
+    <string name="stub_profile_title">Perfil e notificações</string>
+    <string name="stub_profile_desc">Gerencie seus dados, preferências de lembretes, promoções e privacidade (LGPD).</string>
+</resources>
