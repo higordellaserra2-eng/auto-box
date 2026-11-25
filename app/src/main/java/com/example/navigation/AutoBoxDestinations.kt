@@ -22,6 +22,7 @@ object AutoBoxDeepLinks {
   const val HISTORY = "$BASE_URI/history"
   const val REWARDS = "$BASE_URI/rewards"
   const val VEHICLES = "$BASE_URI/vehicles"
+  const val VEHICLE_NEW = "$BASE_URI/vehicles/new"
   const val PROFILE = "$BASE_URI/profile"
   const val PAYMENT = "$BASE_URI/payment"
 }
@@ -40,6 +41,9 @@ data object RewardsDestination
 
 @Serializable
 data object VehiclesDestination
+
+@Serializable
+data class VehicleFormDestination(val vehicleId: String? = null)
 
 @Serializable
 data object ProfileDestination

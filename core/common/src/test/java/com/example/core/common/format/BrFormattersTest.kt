@@ -36,6 +36,11 @@ class BrFormattersTest {
 
     assertEquals("ABC-1234", BrFormatters.formatPlate("abc-1234"))
     assertEquals("BRA2E19", BrFormatters.formatPlate("bra2e19"))
+
+    assertEquals(PlatePattern.LEGACY, BrFormatters.detectPlatePattern("ABC1234"))
+    assertEquals(PlatePattern.MERCOSUL, BrFormatters.detectPlatePattern("BRA2E19"))
+    assertEquals(PlatePattern.INVALID, BrFormatters.detectPlatePattern("1234567"))
+    assertEquals("B R A 2 E 1 9", BrFormatters.formatPlateForAccessibility("BRA2E19"))
   }
 
   @Test

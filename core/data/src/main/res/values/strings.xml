@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vehicle_error_duplicate_plate">Já existe um veículo cadastrado com a placa %1$s.</string>
+    <string name="vehicle_error_not_found">Veículo não encontrado.</string>
+    <string name="vehicle_error_invalid_plate">Informe uma placa válida no padrão antigo ou Mercosul.</string>
+</resources>

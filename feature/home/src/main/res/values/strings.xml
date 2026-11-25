@@ -17,6 +17,8 @@
     <string name="home_reminder_status_upcoming">Agendado</string>
     <string name="home_reminder_status_info">Lembrete</string>
     <string name="home_primary_vehicle_label">Veículo principal</string>
+    <string name="home_empty_vehicle_title">Nenhum veículo cadastrado</string>
+    <string name="home_empty_vehicle_cta">Cadastrar</string>
     <string name="home_empty_title">Comece cadastrando seu veículo</string>
     <string name="home_empty_description">Adicione seu carro para acompanhar serviços, acumular pontos e pagar com rapidez.</string>
     <string name="home_error_title">Não foi possível carregar o início</string>

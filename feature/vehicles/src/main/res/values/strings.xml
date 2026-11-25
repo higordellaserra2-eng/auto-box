@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lista de veículos -->
+    <string name="vehicles_screen_title">Meus veículos</string>
+    <string name="vehicles_add_fab">Cadastrar veículo</string>
+    <string name="vehicles_empty_title">Nenhum veículo cadastrado</string>
+    <string name="vehicles_empty_description">Cadastre sua placa (antiga ou Mercosul) para pagar em segundos e receber lembretes de revisão.</string>
+    <string name="vehicles_empty_cta">Cadastre seu primeiro veículo</string>
+    <string name="vehicles_error_title">Não foi possível carregar seus veículos</string>
+    <string name="vehicles_primary_badge">Principal</string>
+    <string name="vehicles_mileage_label">%1$s km</string>
+    <string name="vehicles_action_edit">Editar</string>
+    <string name="vehicles_action_set_primary">Definir como principal</string>
+    <string name="vehicles_action_delete">Excluir</string>
+    <string name="vehicles_more_options_cd">Mais opções para %1$s %2$s, placa %3$s</string>
+    <string name="vehicles_card_cd_primary">%1$s %2$s, ano %3$d, placa %4$s. Veículo principal.</string>
+    <string name="vehicles_card_cd_regular">%1$s %2$s, ano %3$d, placa %4$s.</string>
+    <string name="vehicles_card_cd_nickname">Apelido: %1$s.</string>
+    <string name="vehicles_type_car">Carro</string>
+    <string name="vehicles_type_motorcycle">Moto</string>
+    <string name="vehicles_type_other">Outro</string>
+
+    <plurals name="vehicles_count_label">
+        <item quantity="one">%1$d veículo cadastrado</item>
+        <item quantity="other">%1$d veículos cadastrados</item>
+    </plurals>
+
+    <!-- Exclusão e desfazer -->
+    <string name="vehicles_delete_dialog_title">Excluir veículo?</string>
+    <string name="vehicles_delete_dialog_message">O veículo %1$s %2$s (placa %3$s) será removido da sua lista.</string>
+    <string name="vehicles_delete_dialog_confirm">Excluir</string>
+    <string name="vehicles_delete_dialog_cancel">Cancelar</string>
+    <string name="vehicles_deleted_snackbar">Veículo %1$s excluído.</string>
+    <string name="vehicles_undo_action">Desfazer</string>
+    <string name="vehicles_restored_snackbar">Veículo %1$s restaurado.</string>
+    <string name="vehicles_primary_updated_snackbar">%1$s %2$s agora é seu veículo principal.</string>
+
+    <!-- Cadastro e edição -->
+    <string name="vehicle_form_create_title">Cadastrar veículo</string>
+    <string name="vehicle_form_edit_title">Editar veículo</string>
+    <string name="vehicle_form_plate_label">Placa do veículo</string>
+    <string name="vehicle_form_plate_placeholder">BRA2E19 ou ABC-1234</string>
+    <string name="vehicle_form_plate_helper">Digite a placa no padrão Mercosul ou antigo.</string>
+    <string name="vehicle_form_plate_readonly_helper">A placa identifica o histórico de serviços e não pode ser alterada. Para outro veículo, cadastre uma nova placa.</string>
+    <string name="vehicle_form_plate_pattern_mercosul">Padrão Mercosul reconhecido</string>
+    <string name="vehicle_form_plate_pattern_legacy">Padrão antigo reconhecido</string>
+    <string name="vehicle_form_plate_error_required">Informe a placa do veículo.</string>
+    <string name="vehicle_form_plate_error_invalid">Placa inválida. Use o formato AAA-9999 ou AAA9A99.</string>
+
+    <string name="vehicle_form_lookup_loading">Consultando dados pela placa…</string>
+    <string name="vehicle_form_lookup_found">Dados preenchidos pela placa. Confira e edite se precisar.</string>
+    <string name="vehicle_form_lookup_not_found">Placa não encontrada na consulta automática. Preencha os dados abaixo.</string>
+    <string name="vehicle_form_lookup_error">Não foi possível consultar a placa agora. Você pode preencher manualmente.</string>
+    <string name="vehicle_form_lookup_retry">Tentar consulta</string>
+
+    <string name="vehicle_form_type_label">Tipo de veículo</string>
+    <string name="vehicle_form_brand_label">Marca</string>
+    <string name="vehicle_form_brand_placeholder">Selecione ou digite a marca</string>
+    <string name="vehicle_form_brand_error">Escolha ou informe a marca do veículo.</string>
+    <string name="vehicle_form_model_label">Modelo</string>
+    <string name="vehicle_form_model_placeholder">Selecione ou digite o modelo</string>
+    <string name="vehicle_form_model_error">Escolha ou informe o modelo do veículo.</string>
+    <string name="vehicle_form_year_label">Ano</string>
+    <string name="vehicle_form_year_placeholder">Selecione o ano</string>
+    <string name="vehicle_form_year_error">Selecione o ano do veículo.</string>
+
+    <string name="vehicle_form_more_details_title">Mais detalhes (opcional)</string>
+    <string name="vehicle_form_more_details_expanded_cd">Seção recolhível Mais detalhes expandida</string>
+    <string name="vehicle_form_more_details_collapsed_cd">Seção recolhível Mais detalhes recolhida</string>
+    <string name="vehicle_form_nickname_label">Apelido</string>
+    <string name="vehicle_form_nickname_placeholder">Ex.: Carro da família</string>
+    <string name="vehicle_form_color_label">Cor</string>
+    <string name="vehicle_form_color_placeholder">Ex.: Prata</string>
+    <string name="vehicle_form_mileage_label">Quilometragem atual (km)</string>
+    <string name="vehicle_form_mileage_placeholder">Ex.: 45000</string>
+    <string name="vehicle_form_mileage_error">Informe uma quilometragem válida.</string>
+
+    <string name="vehicle_form_primary_switch_title">Definir como veículo principal</string>
+    <string name="vehicle_form_primary_switch_subtitle">Usado por padrão nos pagamentos e lembretes.</string>
+    <string name="vehicle_form_primary_locked_subtitle">Seu único veículo fica sempre definido como principal.</string>
+
+    <string name="vehicle_form_summary_title">Resumo do veículo</string>
+    <string name="vehicle_form_save_button">Salvar veículo</string>
+    <string name="vehicle_form_update_button">Salvar alterações</string>
+    <string name="vehicle_form_saved_snackbar">Veículo %1$s cadastrado com sucesso.</string>
+    <string name="vehicle_form_updated_snackbar">Alterações do veículo %1$s salvas.</string>
+
+    <!-- Descartar alterações -->
+    <string name="vehicle_form_discard_title">Descartar alterações?</string>
+    <string name="vehicle_form_discard_message">Você preencheu dados que ainda não foram salvos. Deseja sair mesmo assim?</string>
+    <string name="vehicle_form_discard_confirm">Descartar</string>
+    <string name="vehicle_form_discard_cancel">Continuar editando</string>
+
+    <!-- Seletor pesquisável -->
+    <string name="vehicle_catalog_search_label">Buscar</string>
+    <string name="vehicle_catalog_search_placeholder">Digite para filtrar</string>
+    <string name="vehicle_catalog_select_brand">Selecionar marca</string>
+    <string name="vehicle_catalog_select_model">Selecionar modelo</string>
+    <string name="vehicle_catalog_select_year">Selecionar ano</string>
+    <string name="vehicle_catalog_use_custom">Usar \"%1$s\"</string>
+    <string name="vehicle_catalog_empty">Nenhuma opção encontrada para \"%1$s\".</string>
+    <string name="vehicle_catalog_open_cd">Abrir lista de %1$s</string>
+
+    <!-- Painel adaptativo / detalhe -->
+    <string name="vehicles_detail_placeholder_title">Gerencie seus veículos</string>
+    <string name="vehicles_detail_placeholder_desc">Selecione um veículo ao lado para editar ou cadastre um novo veículo em segundos.</string>
+
+    <!-- VehiclePickerSheet -->
+    <string name="vehicle_picker_title">Escolha o veículo</string>
+    <string name="vehicle_picker_subtitle">Selecione qual veículo será usado neste atendimento.</string>
+    <string name="vehicle_picker_add_new">Cadastrar novo veículo</string>
+    <string name="vehicle_picker_empty_title">Nenhum veículo disponível</string>
+    <string name="vehicle_picker_empty_desc">Cadastre seu primeiro veículo para continuar.</string>
+    <string name="vehicle_picker_selected_cd">Selecionado</string>
+</resources>

@@ -32,4 +32,5 @@ include(
   ":core:data",
   ":feature:onboarding",
   ":feature:home",
+  ":feature:vehicles",
 )

@@ -183,6 +183,7 @@ private fun HomeSuccessContent(
       HomeHeaderSection(
         firstName = summary.customerFirstName,
         primaryVehicle = summary.primaryVehicle,
+        onRegisterVehicleClick = onRegisterVehicleClick,
       )
     }
 
@@ -213,6 +214,7 @@ private fun HomeSuccessContent(
 private fun HomeHeaderSection(
   firstName: String,
   primaryVehicle: VehicleSummary?,
+  onRegisterVehicleClick: () -> Unit,
 ) {
   Column(verticalArrangement = Arrangement.spacedBy(AutoBoxSpacing.xs)) {
     Text(
@@ -229,7 +231,7 @@ private fun HomeHeaderSection(
       Surface(
         shape = MaterialTheme.shapes.small,
         color = MaterialTheme.colorScheme.surfaceContainerLow,
-        modifier = Modifier.padding(top = AutoBoxSpacing.xxs),
+        modifier = Modifier.padding(top = AutoBoxSpacing.xxs).testTag("home_primary_vehicle_badge"),
       ) {
         Row(
           modifier =
@@ -262,6 +264,45 @@ private fun HomeHeaderSection(
               modifier = Modifier.padding(horizontal = AutoBoxSpacing.xs, vertical = 2.dp),
             )
           }
+        }
+      }
+    } else {
+      Surface(
+        onClick = onRegisterVehicleClick,
+        shape = MaterialTheme.shapes.small,
+        color = MaterialTheme.colorScheme.surfaceContainerLow,
+        modifier =
+          Modifier
+            .fillMaxWidth()
+            .padding(top = AutoBoxSpacing.xxs)
+            .testTag("home_empty_vehicle_card"),
+      ) {
+        Row(
+          modifier =
+            Modifier.padding(
+              horizontal = AutoBoxSpacing.sm,
+              vertical = AutoBoxSpacing.sm,
+            ),
+          verticalAlignment = Alignment.CenterVertically,
+          horizontalArrangement = Arrangement.spacedBy(AutoBoxSpacing.xs),
+        ) {
+          Icon(
+            imageVector = Icons.Rounded.DirectionsCar,
+            contentDescription = null,
+            tint = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.size(18.dp),
+          )
+          Text(
+            text = stringResource(R.string.home_empty_vehicle_title),
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.weight(1f),
+          )
+          Text(
+            text = stringResource(R.string.home_empty_vehicle_cta),
+            style = MaterialTheme.typography.labelLarge,
+            color = MaterialTheme.colorScheme.primary,
+          )
         }
       }
     }

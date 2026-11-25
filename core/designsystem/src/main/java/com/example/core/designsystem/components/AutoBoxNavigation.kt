@@ -210,7 +210,9 @@ fun AutoBoxAdaptiveScaffold(
           modifier = Modifier.fillMaxSize(),
           contentAlignment = Alignment.TopCenter,
         ) {
-          Box(modifier = Modifier.widthIn(max = 840.dp).fillMaxSize()) {
+          val maxWidth =
+            if (widthSizeClass == WindowWidthSizeClass.Expanded) 1120.dp else 840.dp
+          Box(modifier = Modifier.widthIn(max = maxWidth).fillMaxSize()) {
             content(PaddingValues(0.dp))
           }
         }

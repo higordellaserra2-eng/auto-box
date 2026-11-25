@@ -36,20 +36,27 @@ import com.example.core.designsystem.preview.AutoBoxComponentPreviews
 import com.example.core.designsystem.theme.AutoBoxSpacing
 import com.example.core.designsystem.theme.AutoBoxTheme
 
+import androidx.compose.material3.LocalTextStyle
+import androidx.compose.ui.text.TextStyle
+
 @Composable
 fun AutoBoxTextField(
   value: String,
   onValueChange: (String) -> Unit,
   label: String,
   modifier: Modifier = Modifier,
+  inputModifier: Modifier = Modifier,
   placeholder: String? = null,
   helperText: String? = null,
   errorMessage: String? = null,
   leadingIcon: ImageVector? = null,
+  trailingIcon: (@Composable () -> Unit)? = null,
   showClearButton: Boolean = true,
   enabled: Boolean = true,
+  readOnly: Boolean = false,
   singleLine: Boolean = true,
   maxLines: Int = if (singleLine) 1 else 4,
+  textStyle: TextStyle = LocalTextStyle.current,
   visualTransformation: VisualTransformation = VisualTransformation.None,
   keyboardOptions: KeyboardOptions = KeyboardOptions.Default,
   keyboardActions: KeyboardActions = KeyboardActions.Default,
@@ -75,6 +82,7 @@ fun AutoBoxTextField(
         },
       trailingIcon =
         when {
+          trailingIcon != null -> trailingIcon
           isError -> {
             {
               Icon(
@@ -84,7 +92,7 @@ fun AutoBoxTextField(
               )
             }
           }
-          showClearButton && value.isNotEmpty() && enabled -> {
+          showClearButton && value.isNotEmpty() && enabled && !readOnly -> {
             {
               IconButton(
                 onClick = { onValueChange("") },
@@ -101,8 +109,10 @@ fun AutoBoxTextField(
         },
       isError = isError,
       enabled = enabled,
+      readOnly = readOnly,
       singleLine = singleLine,
       maxLines = maxLines,
+      textStyle = textStyle,
       visualTransformation = visualTransformation,
       keyboardOptions = keyboardOptions,
       keyboardActions = keyboardActions,
@@ -143,6 +153,7 @@ fun AutoBoxTextField(
       modifier =
         Modifier
           .fillMaxWidth()
+          .then(inputModifier)
           .then(if (testTag != null) Modifier.testTag(testTag) else Modifier)
           .semantics {
             if (isError) {

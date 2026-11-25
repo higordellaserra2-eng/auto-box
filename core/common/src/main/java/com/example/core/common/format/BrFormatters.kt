@@ -49,10 +49,20 @@ object BrFormatters {
     }
   }
 
-  fun isValidPlate(raw: String): Boolean {
+  fun isValidPlate(raw: String): Boolean =
+    detectPlatePattern(raw) != PlatePattern.INVALID
+
+  fun detectPlatePattern(raw: String): PlatePattern {
     val clean = normalizePlate(raw)
-    return legacyPlateRegex.matches(clean) || mercosulPlateRegex.matches(clean)
+    return when {
+      mercosulPlateRegex.matches(clean) -> PlatePattern.MERCOSUL
+      legacyPlateRegex.matches(clean) -> PlatePattern.LEGACY
+      else -> PlatePattern.INVALID
+    }
   }
+
+  fun formatPlateForAccessibility(raw: String): String =
+    normalizePlate(raw).toCharArray().joinToString(" ")
 
   fun formatCpf(raw: String): String {
     val digits = raw.filter(Char::isDigit).take(11)
@@ -83,4 +93,10 @@ object BrFormatters {
         "(${digits.substring(0, 2)}) ${digits.substring(2, 7)}-${digits.substring(7)}"
     }
   }
+}
+
+enum class PlatePattern {
+  LEGACY,
+  MERCOSUL,
+  INVALID,
 }

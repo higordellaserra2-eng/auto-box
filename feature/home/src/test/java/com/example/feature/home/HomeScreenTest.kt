@@ -132,4 +132,42 @@ class HomeScreenTest {
     composeTestRule.onNodeWithTag("error_state_retry_button").performClick()
     assertTrue(retryClicked)
   }
+
+  @Test
+  fun `success state without primary vehicle displays empty vehicle prompt and triggers registration`() {
+    var vehicleClicked = false
+
+    val summary =
+      HomeSummary(
+        customerFirstName = "Mariana",
+        pointsSummary =
+          PointsSummary(
+            currentPoints = 720,
+            nextRewardPoints = 1000,
+            nextRewardTitle = "Lavagem completa grátis",
+            cashbackAvailableCents = 2500L,
+          ),
+        primaryVehicle = null,
+        nextReminder = null,
+        pendingPaymentAmountCents = null,
+      )
+
+    composeTestRule.setContent {
+      AutoBoxTheme {
+        HomeScreen(
+          uiState = HomeUiState.Success(summary = summary),
+          isOffline = false,
+          onRefresh = {},
+          onRetry = {},
+          onPayClick = {},
+          onRegisterVehicleClick = { vehicleClicked = true },
+          onOpenRewardsClick = {},
+        )
+      }
+    }
+    composeTestRule.waitForIdle()
+
+    composeTestRule.onNodeWithTag("home_empty_vehicle_card").assertIsDisplayed().performClick()
+    assertTrue(vehicleClicked)
+  }
 }

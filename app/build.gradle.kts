@@ -94,6 +94,7 @@ dependencies {
   implementation(project(":core:data"))
   implementation(project(":feature:onboarding"))
   implementation(project(":feature:home"))
+  implementation(project(":feature:vehicles"))
 
   implementation(platform(libs.androidx.compose.bom))
   implementation(libs.androidx.activity.compose)
